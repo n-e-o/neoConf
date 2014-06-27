@@ -1,0 +1,18 @@
+# Neo- shell configuration file
+# v0.1 27/06/2014
+
+# Local
+export LANG=fr_FR.UTF-8
+
+# Aliases
+alias ll="ls -l"
+alias la="ls -la"
+alias e="emacs"
+alias em="emacs -nw"
+
+# Preferred Editor
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='emacs'
+else
+  export EDITOR='emacs -nw'
+fi
